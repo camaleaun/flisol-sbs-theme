@@ -1,0 +1,22 @@
+$owl-image-path: "~owl.carousel/src/img/";
+@import './vendors/bootstrap';
+@import './vendors/breakpoints';
+@import '~owl.carousel/src/scss/owl.carousel';
+
+@import './variables/colors';
+@import './variables/fonts';
+@import './variables/querys';
+@import './typography/headings';
+@import './typography/text';
+@import './typography/typography';
+
+@import './components/common';
+
+@import './header/main-menu';
+@import './header/responsive-menu';
+
+@import './pages/front-page';
+@import './pages/list-posts';
+@import './pages/single-page';
+
+@import './footer/footer';

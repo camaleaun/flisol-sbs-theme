@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+/**
+ * Ajuda e Opções de tela
+ */
+#screen-meta-links,
+
+/**
+ * Logo WP na barra do topo
+ */
+#wp-admin-bar-wp-logo,
+
+/**
+ * Submenus de Painel
+ */
+#menu-dashboard ul,
+
+/**
+ * Menu Ferramentas
+ */
+#menu-tools {
+    display: none !important;
+}
+
+
+/*Dashboards*/
+#dashboard_right_now,
+#dashboard_activity,
+#dashboard_quick_press,
+#dashboard_primary{
+    display: none;
+}

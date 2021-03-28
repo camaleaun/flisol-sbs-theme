@@ -1,0 +1,23 @@
+/*
+ *
+ * TYPOGRAPHY FONTS
+ *
+ */
+
+/** Google Fonts  */
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@100;300;700;900;300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap);
+
+/** Fonts - provide here */
+$font__arial: "Arial", "Helvetica",sans-serif;
+$font__lato: Lato, sans-serif;
+$font__roboto: Roboto, sans-serif;
+$w__light: 300;
+$w__normal: 400;
+$w__medium: 500;
+$w__semi-bold: 600;
+$w__bold: 700;
+$w__extra-bold: 800;
+$w__black: 900;
+$font__line-height-body: 28px;
+$font__line-height-pre: 1.6;

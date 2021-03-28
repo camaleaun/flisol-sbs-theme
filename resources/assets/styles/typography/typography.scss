@@ -1,0 +1,46 @@
+/**
+ *
+ * TYPOGRAPHY
+ *
+ */
+
+body,
+p,
+button,
+input,
+select,
+optgroup,
+textarea,
+span,
+li,
+ul,
+ol,
+a {
+	color: $dark__primary;
+	font-family: $font__lato;
+	font-size: 1rem;
+	line-height: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+p {
+  font-size: 16px;
+  line-height: 19px;
+
+  b {
+    font-weight: $w__bold;
+  }
+}
+
+small {
+  font-size: 12px;
+  line-height: 14px;
+
+  b {
+    font-weight: $w__bold;
+  }
+}

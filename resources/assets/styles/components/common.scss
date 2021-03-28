@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flsbs__row {
+  @include make-row();
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+button:focus,
+input:focus {
+  box-shadow: none !important;
+}
+
+.space-1 {
+  clear: both;
+  height: 10px;
+}
+
+.space-2 {
+  clear: both;
+  height: 20px;
+}
+.space-3 {
+  clear: both;
+  height: 30px;
+}
+
+.space-4 {
+  clear: both;
+  height: 40px;
+}
+
+.space-5 {
+  clear: both;
+  height: 50px;
+}
+
+.space-6 {
+  clear: both;
+  height: 60px;
+}
+
+.space-7 {
+  clear: both;
+  height: 70px;
+}
+
+.space-8 {
+  clear: both;
+  height: 80px;
+}
+
+.space-9 {
+  clear: both;
+  height: 90px;
+}
+
+.space-10 {
+  clear: both;
+  height: 100px;
+}
+
+.button-default {
+  border: 1px solid $cta__color;
+  background-color: $cta__color;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @include transition(all 0.3s ease);
+
+  a {
+    font-size: 14px;
+    line-height: 17px;
+    color: $color__button-second;
+    font-weight: $w__bold;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $white__color;
+
+    a {
+      color: $cta__color;
+    }
+  }
+}
+
+.button-second-green-1 {
+  border: 1px solid $secondary__green-1;
+  background-color: $secondary__green-1;
+  border-radius: 11px;
+  cursor: pointer;
+
+  @include transition(all 0.3s ease);
+
+  a {
+    font-size: 18px;
+    line-height: 22px;
+    color: $color__button-second;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $white__color;
+
+    a {
+      color: $secondary__green-1;
+    }
+  }
+}
+
+.button-second-green-2 {
+  border: 1px solid $secondary__green-2;
+  background-color: $secondary__green-2;
+  border-radius: 11px;
+  cursor: pointer;
+
+  @include transition(all 0.3s ease);
+
+  a {
+    font-size: 18px;
+    line-height: 22px;
+    color: $color__button-second;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $white__color;
+
+    a {
+      color: $secondary__green-2;
+    }
+  }
+}
+
+.button-second-green-3 {
+  border: 1px solid $secondary__green-3;
+  background-color: $secondary__green-3;
+  border-radius: 11px;
+  cursor: pointer;
+
+  @include transition(all 0.3s ease);
+
+  a {
+    font-size: 18px;
+    line-height: 22px;
+    color: $color__button-second;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $white__color;
+
+    a {
+      color: $secondary__green-3;
+    }
+  }
+}
+
+.button-tertiary-1 {
+  border: 1px solid $primary__purple-1;
+  background-color: $primary__purple-1;
+  border-radius: 11px;
+  cursor: pointer;
+
+  @include transition(all 0.3s ease);
+
+  a {
+    font-size: 18px;
+    line-height: 22px;
+    color: $white__color;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $white__color;
+
+    a {
+      color: $primary__purple-1;
+    }
+  }
+}
+
+.button-tertiary-2 {
+  border: 1px solid $primary__purple-2;
+  background-color: $primary__purple-2;
+  border-radius: 11px;
+  cursor: pointer;
+
+  @include transition(all 0.3s ease);
+
+  a {
+    font-size: 18px;
+    line-height: 22px;
+    color: $white__color;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $white__color;
+
+    a {
+      color: $primary__purple-2;
+    }
+  }
+}
+
+.button-tertiary-3 {
+  border: 1px solid $primary__purple-3;
+  background-color: $primary__purple-3;
+  border-radius: 11px;
+  cursor: pointer;
+
+  @include transition(all 0.3s ease);
+
+  a {
+    font-size: 18px;
+    line-height: 22px;
+    color: $white__color;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $white__color;
+
+    a {
+      color: $primary__purple-3;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.mm__title-sections {
+  .mm__content-title-sections {
+    color: $primary__purple-4;
+    font-family: $font__lato;
+    font-size: 24px;
+    font-weight: $w__bold;
+    line-height: 29px;
+    position: relative;
+
+    &::after {
+      background-color: $secondary__green-1;
+      bottom: -6px;
+      content: '';
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 206px;
+    }
+
+    &::before {
+      background-color: $gray__bar;
+      bottom: -5px;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
+
+.mm__title-page {
+  .mm__content-title-page {
+    color: $primary__purple-4;
+    font-family: $font__lato;
+    font-size: 48px;
+    font-weight: $w__extra-bold;
+    line-height: 58px;
+    position: relative;
+
+    &::after {
+      background-color: $secondary__green-1;
+      bottom: -6px;
+      content: '';
+      height: 5px;
+      left: 0;
+      position: absolute;
+      width: 207px;
+    }
+
+  }
+}
+
+$items: 4;
+$transition-duration: 0.5s;
+$transition-delay: 0.05s;

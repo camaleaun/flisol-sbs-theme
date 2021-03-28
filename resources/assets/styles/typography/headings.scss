@@ -1,0 +1,42 @@
+/**
+ *
+ * HEADINGS
+ *
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family: $font__lato;
+	color: $dark__primary;
+	letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 67px;
+  line-height: 80px;
+}
+
+h3 {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+h4 {
+  font-size: 38px;
+  line-height: 46px;
+}
+
+h5 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+h6 {
+  font-size: 21px;
+  line-height: 25px;
+}

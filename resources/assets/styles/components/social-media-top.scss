@@ -1,0 +1,36 @@
+.mm__social-media-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 0px;
+
+  a {
+
+    &:nth-last-child(1) {
+      svg {
+        margin: 0;
+      }
+    }
+
+    svg {
+      margin-right: 12px;
+      height: 25px;
+      width: 25px;
+
+      @include media('<=tablet') {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &:hover {
+      svg {
+        g {
+          path {
+            fill: $primary__purple-3 !important;
+          }
+        }
+      }
+    }
+  }
+}
