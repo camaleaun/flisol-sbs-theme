@@ -4,7 +4,6 @@
  *
  */
 
-body,
 p,
 button,
 input,
@@ -16,31 +15,12 @@ li,
 ul,
 ol,
 a {
-	color: $dark__primary;
-	font-family: $font__lato;
-	font-size: 1rem;
+	font-family: $font__poppins;
 	line-height: normal;
+  font-weight: $w__normal;
 }
 
 a {
   text-decoration: none;
 }
 
-
-p {
-  font-size: 16px;
-  line-height: 19px;
-
-  b {
-    font-weight: $w__bold;
-  }
-}
-
-small {
-  font-size: 12px;
-  line-height: 14px;
-
-  b {
-    font-weight: $w__bold;
-  }
-}
