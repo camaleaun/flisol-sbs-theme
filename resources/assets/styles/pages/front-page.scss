@@ -1,0 +1,161 @@
+.home {
+  #cabecalho {
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+  }
+}
+
+.home__sobre-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+#home__sobre {
+  h2 {
+    padding-bottom: 8rem;
+  }
+}
+
+#home__atividades {
+  h4 {
+    text-align: center;
+    margin: 2rem 0;
+  }
+}
+
+.home__atividades-item {
+  background: $white__color;
+  border-radius: 1.2rem;
+  -webkit-box-shadow: -1px 3px 25px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 3px 25px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 3px 25px -13px rgba(0, 0, 0, 0.75);
+  padding: 0;
+
+  .atividade-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem;
+    background: $primary-color;
+    border-radius: 1.2rem 1.2rem 0px 0px;
+
+    img {
+      height: 4rem;
+    }
+
+    h3 {
+      font-weight: bold;
+      color: $white__color;
+    }
+  }
+}
+
+.home__atividades-item.palestra-item {
+  .atividade-cabecalho {
+    background-color: $secondary-color;
+  }
+}
+
+.atividade-conteudo {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  .atividade-conteudo-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    strong {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    time {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+#home__data {
+  padding: 12rem 0 !important;
+
+  .row {
+    align-items: center;
+  }
+}
+
+.home__data--col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 12rem;
+  background: $primary-color;
+  max-height: 20rem;
+
+  h3 {
+    font-weight: bold;
+    margin-bottom: 2.6rem;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.home__data--col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 12rem;
+  color: #fff;
+  min-height: 30rem;
+  background-color: $secondary-color;
+
+  h2 {
+    font-weight: bold;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  h6 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+  }
+}

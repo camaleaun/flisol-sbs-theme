@@ -1,3 +1,16 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0.8rem;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
 .btn-padrao {
   color: $white__color;
   background-color: $primary-color;
@@ -16,4 +29,69 @@
 
 .section-background {
   background-color: $light__third;
+}
+
+.blink {
+  animation: blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: blink-animation 1s steps(2, start) infinite;
+}
+
+.saiba-mais {
+  justify-content: center;
+
+  a {
+    max-width: 400px;
+    font-size: 2rem;
+  }
+}
+
+.breadcrumb {
+  padding: 2rem 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 22rem;
+  margin-top: 2rem;
+
+  h1 {
+    padding: 6rem 2rem;
+    color: $white__color;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.2rem;
+    padding-bottom: 1.4rem;
+  }
+}
+
+.breadcrumb-item {
+  padding: 0 2rem;
+  color: $white__color;
+  font-size: 2.2rem;
+}
+
+.section-padrao {
+  h2.titulo {
+    padding-top: 8rem;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 1.4rem;
+  }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
