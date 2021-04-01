@@ -4,18 +4,6 @@
  *
  */
 
-/* Primary colors */
-$primary__purple-1: #59088a;
-$primary__purple-2: #2f0548;
-$primary__purple-3: #8631b9;
-$primary__purple-4: #580888;
-$primary__purple-5: #2a0640;
-
-/* Secondary colors */
-$secondary__green-1: #bad537;
-$secondary__green-2: #768a16;
-$secondary__green-3: #cfe179;
-
 /* Dark colors */
 $dark__primary: #525252;
 $dark__secondary: #8a8989;
@@ -23,9 +11,9 @@ $dark__secondary: #8a8989;
 /* Light colors */
 $light__primary: #c4c4c4;
 $light__secondary: #d5d5d5;
+$light__third: #eeeeee;
 
-/* CTA color */
-$cta__color: #ffbc18;
+
 
 /* Danger color */
 $danger__color: #ff7171;
@@ -37,11 +25,8 @@ $success__color: #cbe54c;
 $white__color: #ffffff;
 $black__color: #000000;
 
-$color__button-second: #2a0640;
 
-$rgba__banner-single-page: rgba(0, 0, 0, 0.45);
-$rgba__banner: rgba(213, 213, 213, 0.19);
-$rgba__posts-sidebar: rgba(213, 213, 213, 0.26);
-$rgba__courses: rgba(47, 5, 72, 0.39);
-$color__posts-sidebar: #f4f4f4;
-$gray__bar: #e5e5e5;
+
+$primary-color: #ff8f2a;
+$secondary-color: #0093b3;
+$primary-dark: #2e2e2e;
