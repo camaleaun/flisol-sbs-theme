@@ -6,6 +6,13 @@ html {
   margin: 0.8rem;
 }
 
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
 body {
   font-weight: 300;
   line-height: 1.6;
@@ -43,30 +50,6 @@ body {
     max-width: 400px;
     font-size: 2rem;
   }
-}
-
-.breadcrumb {
-  padding: 2rem 0;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 22rem;
-  margin-top: 2rem;
-
-  h1 {
-    padding: 6rem 2rem;
-    color: $white__color;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 3.2rem;
-    padding-bottom: 1.4rem;
-  }
-}
-
-.breadcrumb-item {
-  padding: 0 2rem;
-  color: $white__color;
-  font-size: 2.2rem;
 }
 
 .section-padrao {

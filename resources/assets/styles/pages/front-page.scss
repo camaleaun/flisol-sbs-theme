@@ -1,18 +1,14 @@
-.home {
-  #cabecalho {
-    min-height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 2rem;
-  }
-}
-
 .home__sobre-feature {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+#home__sobre h2 {
+  padding-bottom: 8rem;
+}
+
+.home__sobre-feature {
   img {
     height: 8rem;
     margin-bottom: 2rem;
@@ -21,7 +17,7 @@
   h3 {
     font-size: 2em;
     font-weight: bold;
-    color: $primary-color;
+    color: $primary_color;
   }
 
   p {
@@ -29,17 +25,9 @@
   }
 }
 
-#home__sobre {
-  h2 {
-    padding-bottom: 8rem;
-  }
-}
-
-#home__atividades {
-  h4 {
-    text-align: center;
-    margin: 2rem 0;
-  }
+#home__atividades h4 {
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .home__atividades-item {
@@ -55,9 +43,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.8rem;
-    background: $primary-color;
+    background: $primary_color;
     border-radius: 1.2rem 1.2rem 0px 0px;
+  }
 
+  &.palestra-item .atividade-cabecalho {
+    background-color: $secondary-color;
+  }
+
+  .atividade-cabecalho {
     img {
       height: 4rem;
     }
@@ -66,12 +60,6 @@
       font-weight: bold;
       color: $white__color;
     }
-  }
-}
-
-.home__atividades-item.palestra-item {
-  .atividade-cabecalho {
-    background-color: $secondary-color;
   }
 }
 
@@ -96,66 +84,66 @@
   }
 }
 
+/**
+** Data
+**/
+
 #home__data {
   padding: 12rem 0 !important;
-
-  .row {
-    align-items: center;
-  }
 }
 
-.home__data--col-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  padding: 12rem;
-  background: $primary-color;
-  max-height: 20rem;
-
-  h3 {
-    font-weight: bold;
-    margin-bottom: 2.6rem;
-    font-size: 2.8rem;
-    text-align: center;
-  }
-
-  p {
-    text-align: center;
-  }
-}
-
+.home__data--col-1,
 .home__data--col-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: $white__color;
   padding: 12rem;
-  color: #fff;
-  min-height: 30rem;
-  background-color: $secondary-color;
+}
 
+.home__data--col-1 h3 {
+  font-weight: bold;
+  margin-bottom: 2.6rem;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.home__data--col-2 {
   h2 {
     font-weight: bold;
     font-size: 3.2rem;
     margin-bottom: 4rem;
   }
 
-  h4 {
-    font-size: 2rem;
-    margin-bottom: 1.6rem;
-    font-weight: bold;
-  }
-
-  h5 {
-    font-size: 2rem;
-    margin-bottom: 1.6rem;
-  }
-
+  h4,
+  h5,
   h6 {
     font-size: 2rem;
     margin-bottom: 1.6rem;
   }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  color: $white__color;
+}
+
+.home__data--col-1 {
+  p {
+    text-align: center;
+  }
+
+  background: $primary_color;
+  max-height: 20rem;
+}
+
+.home__data--col-2 {
+  min-height: 30rem;
+  background-color: $secondary-color;
+}
+
+#home__data .row {
+  align-items: center;
 }
