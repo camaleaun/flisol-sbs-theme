@@ -12,21 +12,9 @@
 
           <div class="home__sobre-feature">
 
-            <img class="img-fluid" src="/assets/imgs/chat.svg" alt="Ícone Palestra">
+            <img class="img-fluid" src='<?php echo theme_url('/dist/images/chat.svg') ?>' alt="Ícone Palestra">
 
-            <h3>Palestras</h3>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-3 mt-5">
-
-          <div class="home__sobre-feature">
-
-            <img class="img-fluid" src="/assets/imgs/computer.svg" alt="Ícone Computador">
-
-            <h3>Instalação de software livre</h3>
+            <h3 class="flsbs__aligncenter">Palestras</h3>
 
           </div>
 
@@ -36,9 +24,9 @@
 
           <div class="home__sobre-feature">
 
-            <img class="img-fluid" src="/assets/imgs/training.svg" alt="Ícone Workshops">
+            <img class="img-fluid" src='<?php echo theme_url('/dist/images/computer.svg') ?>' alt="Ícone Computador">
 
-            <h3>workshops</h3>
+            <h3 class="flsbs__aligncenter">Instalação de software livre</h3>
 
           </div>
 
@@ -48,9 +36,21 @@
 
           <div class="home__sobre-feature">
 
-            <img class="img-fluid" src="/assets/imgs/online-casino.svg" alt="Ícone Online e Grátis">
+            <img class="img-fluid" src='<?php echo theme_url('/dist/images/training.svg') ?>' alt="Ícone Workshops">
 
-            <h3>Online e Grátis</h3>
+            <h3 class="flsbs__aligncenter">Workshops</h3>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-3 mt-5">
+
+          <div class="home__sobre-feature">
+
+            <img class="img-fluid" src='<?php echo theme_url('/dist/images/online-casino.svg') ?>' alt="Ícone Online e Grátis">
+
+            <h3 class="flsbs__aligncenter">Online e Grátis</h3>
 
           </div>
 
@@ -81,7 +81,7 @@
         </div>
 
         <div class="col-md-6 text-center">
-          <img class="img-fluid" src="/assets/imgs/logo-sobre.png" alt="Logo Sobre" srcset="">
+          <img class="img-fluid" src="<?php echo theme_url ('/dist/images/logo-sobre.png') ?>" alt="Logo Sobre" srcset="">
         </div>
 
       </div>

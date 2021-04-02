@@ -13,7 +13,7 @@
 
           <div class="atividade-cabecalho">
 
-            <img src="/assets/imgs/calendar.svg" alt="Ícone Calendario">
+            <img src='<?php echo theme_url('/dist/images/calendar.svg') ?>' alt="Ícone Calendario">
 
             <h3>Pelestra WordPress XYZ</h3>
 
@@ -52,7 +52,7 @@
 
           <div class="atividade-cabecalho">
 
-            <img src="/assets/imgs/calendar.svg" alt="Ícone Calendario">
+            <img src='<?php echo theme_url('/dist/images/calendar.svg') ?>' alt="Ícone Calendario">
 
             <h3>Pelestra WordPress XYZ</h3>
 

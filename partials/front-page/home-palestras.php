@@ -12,7 +12,7 @@
 
           <div class="home__sobre-feature">
 
-            <img class="img-fluid" src="/assets/imgs/online-casino.svg" alt="Ícone Online">
+            <img class="img-fluid" src='<?php echo theme_url('/dist/images/online-casino.svg') ?>' alt="Ícone Online">
 
             <h3>Online</h3>
 
@@ -28,7 +28,7 @@
 
           <div class="home__sobre-feature">
 
-            <img class="img-fluid" src="/assets/imgs/best-price.svg" alt="Ícone Grátis">
+            <img class="img-fluid" src='<?php echo theme_url('/dist/images/best-price.svg') ?>' alt="Ícone Grátis">
 
             <h3>Gratuito</h3>
 
@@ -42,7 +42,7 @@
 
           <div class="home__sobre-feature">
 
-            <img class="img-fluid" src="/assets/imgs/network.svg" alt="Ícone Network">
+            <img class="img-fluid" src='<?php echo theme_url('/dist/images/network.svg') ?>' alt="Ícone Network">
 
             <h3>Networking</h3>
 
@@ -62,7 +62,7 @@
 
             <div class="atividade-cabecalho">
 
-              <img src="/assets/imgs/calendar.svg" alt="Ícone Calendario">
+              <img src='<?php echo theme_url('/dist/images/calendar.svg') ?>' alt="Ícone Calendario">
 
               <h3>Pelestra WordPress XYZ</h3>
 
@@ -101,7 +101,7 @@
 
             <div class="atividade-cabecalho">
 
-              <img src="/assets/imgs/calendar.svg" alt="Ícone Calendario">
+              <img src='<?php echo theme_url('/dist/images/calendar.svg') ?>' alt="Ícone Calendario">
 
               <h3>Pelestra WordPress XYZ</h3>
 
