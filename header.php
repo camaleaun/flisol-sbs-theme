@@ -18,8 +18,8 @@ if( ! defined( 'WPINC' ) ) {
 	</head>
 	<body <?php body_class() ?> data-baseurl='<?php echo theme_url() ?>'>
 
-	<div class='all'>
     <header class="header" id="cabecalho" style="background-image: url(<?php echo theme_url('/dist/images/home-img.jpg'); ?>)">
         <?php inc( 'partials/header/main-header-menu' ) ?>
     </header>
+    <main>
 
