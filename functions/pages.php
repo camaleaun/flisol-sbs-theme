@@ -19,42 +19,30 @@ $default_configs = array(
 );
 
 $panel_pages = array(
-    /* array(
+    array(
         'post_title' => 'Home',
         'post_name'  => 'front-page'
     ),
     array(
-        'post_title' => 'A Humanus',
+        'post_title' => 'Sobre',
         'post_name'  => 'sobre'
     ),
     array(
-        'post_title' => 'Produtos',
-        'post_name'  => 'produtos'
+        'post_title' => 'Programação',
+        'post_name'  => 'programacao'
     ),
     array(
-        'post_title' => 'Serviços',
-        'post_name'  => 'servicos'
+        'post_title' => 'Palestrantes',
+        'post_name'  => 'palestrantes'
     ),
     array(
-        'post_title' => 'Clientes',
-        'post_name'  => 'clientes'
+        'post_title' => 'Atividades',
+        'post_name'  => 'atividades'
     ),
     array(
-        'post_title' => 'Parceiros',
-        'post_name'  => 'parceiros'
+        'post_title' => 'Certificados',
+        'post_name'  => 'certificados'
     ),
-    array(
-        'post_title' => 'Conteúdos',
-        'post_name'  => 'conteudos'
-    ),
-    array(
-        'post_title' => 'Blog',
-        'post_name'  => 'blog'
-    ),
-    array(
-        'post_title' => 'Contato',
-        'post_name'  => 'contato'
-    ), */
 );
 
 foreach( $panel_pages as $p_page ) {

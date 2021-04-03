@@ -12,7 +12,7 @@
 
             <div class="atividade-cabecalho">
 
-              <img src="/assets/imgs/blogging.svg" alt="Ícone Calendario">
+              <img src='<?php echo theme_url('/dist/images/blogging.svg'); ?>' alt="Ícone Calendario">
 
               <h3>Como iniciar um tema WordPress</h3>
 
@@ -48,7 +48,7 @@
 
             <div class="atividade-cabecalho">
 
-              <img src="/assets/imgs/blogging.svg" alt="Ícone Calendario">
+              <img src='<?php echo theme_url('/dist/images/blogging.svg'); ?>' alt="Ícone Calendario">
 
               <h3>Como iniciar um tema WordPress</h3>
 
@@ -84,7 +84,7 @@
 
             <div class="atividade-cabecalho">
 
-              <img src="/assets/imgs/blogging.svg" alt="Ícone Calendario">
+              <img src='<?php echo theme_url('/dist/images/blogging.svg'); ?>' alt="Ícone Calendario">
 
               <h3>Como iniciar um tema WordPress</h3>
 
@@ -120,7 +120,7 @@
 
             <div class="atividade-cabecalho">
 
-              <img src="/assets/imgs/blogging.svg" alt="Ícone Calendario">
+              <img src='<?php echo theme_url('/dist/images/blogging.svg'); ?>' alt="Ícone Calendario">
 
               <h3>Como iniciar um tema WordPress</h3>
 
