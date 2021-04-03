@@ -37,6 +37,8 @@
   -moz-box-shadow: -1px 3px 25px -13px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 3px 25px -13px rgba(0, 0, 0, 0.75);
   padding: 0;
+  margin-bottom: 3rem !important;
+  margin-top: 3rem !important;
 
   .atividade-cabecalho {
     display: flex;
@@ -133,6 +135,7 @@
 .home__data--col-1 {
   p {
     text-align: center;
+    padding: 0 !important;
   }
 
   background: $primary_color;

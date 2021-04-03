@@ -6,33 +6,37 @@
   padding: 2rem;
 }
 
-.page .header.cabecalho__fundo--branco {
-  padding: 2rem 0;
-}
+.section-padrao {
+  p {
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 1.4rem;
+  }
 
-.section-padrao h2.titulo {
-  padding-top: 8rem;
-  text-align: center;
-  font-size: 3.2rem;
-  font-weight: bold;
-}
-
-.page .section-padrao {
   h2.titulo {
-    padding-bottom: 1.4rem;
-  }
-
-  h3.subtitulo {
+    padding-top: 8rem;
     text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
   }
 }
 
-.section-padrao p {
-  font-size: 1.8rem;
-  text-align: justify;
-  text-indent: 1.4rem;
-}
+.page {
+  .header.cabecalho__fundo--branco {
+    padding: 2rem 0;
+  }
 
-.page .section-padrao p {
-  padding: 2rem 4rem;
+  .section-padrao {
+    p {
+      padding: 2rem 4rem;
+    }
+
+    h2.titulo {
+      padding-bottom: 1.4rem;
+    }
+
+    h3.subtitulo {
+      text-align: center;
+    }
+  }
 }
