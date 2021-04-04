@@ -7,15 +7,14 @@
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-        <nav role="navigation" class="menu">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/sobre.html">Sobre</a></li>
-          <li><a href="/programacao.html">Programação</a></li>
-          <li><a href="#">Palestrantes</a></li>
-          <li><a href="#">Atividades</a></li>
-          <li><a href="#">Certificados</a></li>
-        </nav>
-
+         <?php
+            wp_nav_menu( array(
+                'theme_location' => 'top-menu',
+                'menu_id'        => 'menu-itens-internal',
+                'container'      => false,
+                'menu_class'     => 'menu'
+            ) );
+        ?>
 
 </div>
 

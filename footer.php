@@ -13,15 +13,17 @@ if( ! defined( 'WPINC' ) ) {
             <div class="row">
             <div class="col-md-4">
                 <div class="footer__menu">
-                <h3 class="footer__menu-titulo">
-                    ><span class="blink">_</span> Navegue
-                </h3>
-                <nav class="nav flex-column">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </nav>
+                    <h3 class="footer__menu-titulo">
+                        ><span class="blink">_</span> Navegue
+                    </h3>
+                    <?php
+                        wp_nav_menu( array(
+                            'theme_location' => 'footer-menu',
+                            'menu_id'        => 'menu-itens-footer',
+                            'container'      => false,
+                            'menu_class'     => 'nav flex-column'
+                        ) );
+                    ?>
                 </div>
             </div>
             <div class="col-md-4">

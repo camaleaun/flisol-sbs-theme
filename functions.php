@@ -93,7 +93,8 @@ function sdt_remove_version() {
  */
 function register_theme_menus(){
 	register_nav_menus(array(
-		'top-menu' => __('Top Menu', 'textdomain')
+		'top-menu' => __('Top Menu', 'textdomain'),
+		'footer-menu' => __('Footer Menu', 'textdomain'),
 	));
 }
 

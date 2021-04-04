@@ -16,15 +16,21 @@
 }
 
 .footer__menu {
-  nav {
-    a {
-      color: $white__color;
-      font-size: 1.6rem;
+  ul {
+    li {
       position: relative;
+
+      a {
+        color: $white__color;
+        font-size: 1.6rem;
+        text-decoration: none;
+      }
     }
 
     &:not(.redes) {
-      a {
+      li {
+        padding: 5px 10px;
+
         &::after {
           position: absolute;
           content: "";
@@ -36,7 +42,11 @@
         }
 
         &:hover {
-          color: $primary-color;
+          text-decoration: none;
+
+          a {
+            color: $primary-color;
+          }
 
           &::after {
             width: 32%;
