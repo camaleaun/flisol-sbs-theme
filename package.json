@@ -29,6 +29,7 @@
   "devDependencies": {
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "@wordpress/scripts": "^9.0.0",
     "autoprefixer": "~8.2.0",
     "browser-sync": "~2.24.7",
