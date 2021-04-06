@@ -5,12 +5,12 @@ if ( ! defined( 'WPINC' ) ) {
     exit;
 }
 
-class Controller_Palestrantes {
+class Controller_Palestras {
 
     public function __construct(){
         add_action( 'pre_get_posts', array( $this, 'setPostsPerPage' ), 10 ,2 );
-        add_filter( 'get_palestrantes_post' , array( $this , 'get_palestrantes_post') );
-        add_filter( 'get_palestrantes_posts' , array( $this , 'get_palestrantes_posts') );
+        add_filter( 'get_palestras_post' , array( $this , 'get_palestras_post') );
+        add_filter( 'get_palestras_posts' , array( $this , 'get_palestras_posts') );
         add_filter( 'get_last_post_home' , array( $this , 'get_last_post_home' ) );
         add_filter( 'get_last_post_sidebar' , array( $this , 'get_last_post_sidebar' ) );
         //add_filter( 'get_post_featured' , array( $this , 'get_post_featured' ) );
@@ -22,7 +22,7 @@ class Controller_Palestrantes {
 
         $this->query = $query;
 
-        if( $query->get( 'post_type' ) !=  'palestrantes') {
+        if( $query->get( 'post_type' ) !=  'palestras') {
             return;
         }
         $this->query->set( 'posts_per_page', 12 );
@@ -31,12 +31,12 @@ class Controller_Palestrantes {
     public function get_post_by_id( $post_id ) {
         $post = get_post( $post_id );
         if( $post ) {
-            return $this->get_palestrantes_post( $post );
+            return $this->get_palestras_post( $post );
         }
         return false;
     }
 
-    public function get_palestrantes_post( $post ) {
+    public function get_palestras_post( $post ) {
         $post->intro = $post->post_excerpt;
         $post->permalink = get_permalink( $post );
         $post->date = get_the_date( 'd/m/Y', $post->ID );
@@ -54,14 +54,14 @@ class Controller_Palestrantes {
         return $post;
     }
 
-    public function get_palestrantes_posts( $posts ) {
+    public function get_palestras_posts( $posts ) {
         if( count( $posts ) == 0 ) {
             return null;
         }
 
         $posts_blog = array();
         foreach( $posts as $post ) {
-            $posts_blog[] = $this->get_palestrantes_post( $post );
+            $posts_blog[] = $this->get_palestras_post( $post );
         }
         return $posts_blog;
     }
@@ -72,7 +72,7 @@ class Controller_Palestrantes {
         $tax = $wp_query->get_queried_object();
         $posts_per_page = 1;
         $args = array(
-            'post_type'         => 'palestrantes',
+            'post_type'         => 'palestras',
             'posts_per_page'    => $posts_per_page
         );
         $tax = $wp_query->get_queried_object();
@@ -93,7 +93,7 @@ class Controller_Palestrantes {
 
         $post_blog = array_shift( $posts );
 
-        $this->get_palestrantes_post( $post_blog );
+        $this->get_palestras_post( $post_blog );
 
         $img_id = get_post_thumbnail_id( $post_blog->ID );
         if( $img_id ) {
@@ -110,7 +110,7 @@ class Controller_Palestrantes {
         //$tax = $wp_query->get_queried_object();
         $posts_per_page = -1;
         $args = array(
-            'post_type'         => 'palestrantes',
+            'post_type'         => 'palestras',
             'posts_per_page'    =>  $posts_per_page,
             'orderby'           => 'date',
             'order'             => 'DESC',
@@ -119,7 +119,7 @@ class Controller_Palestrantes {
        $posts = get_posts($args);
         if ( $posts ) {
             foreach ( $posts as $post ) {
-                $list_posts[] = $this->get_palestrantes_post($post);
+                $list_posts[] = $this->get_palestras_post($post);
             }
             return $list_posts;
         }
@@ -162,7 +162,7 @@ class Controller_Palestrantes {
         );
 
         $args = array(
-            'post_type'         => 'palestrantes',
+            'post_type'         => 'palestras',
             'posts_per_page'    => -1,
             'tax_query'         => $tax_query,
             'orderby'           => 'date',
@@ -172,7 +172,7 @@ class Controller_Palestrantes {
         $posts = get_posts($args);
         if ( $posts ) {
             foreach ( $posts as $post ) {
-                $list_posts[] = $this->get_palestrantes_post($post);
+                $list_posts[] = $this->get_palestras_post($post);
             }
             return $list_posts;
         }
@@ -183,7 +183,7 @@ class Controller_Palestrantes {
         global $wp_query;
 
         $args = array(
-            'post_type'         => 'palestrantes',
+            'post_type'         => 'palestras',
             'posts_per_page'    => -1,
             'paged'             => $wp_query->query['paged'],
             'orderby'           => 'date',
@@ -199,7 +199,7 @@ class Controller_Palestrantes {
         $posts = get_posts($args);
         if ( $posts ) {
             foreach ( $posts as $post ) {
-                $list_posts[] = $this->get_palestrantes_post($post);
+                $list_posts[] = $this->get_palestras_post($post);
             }
             return $list_posts;
         }
@@ -210,14 +210,14 @@ class Controller_Palestrantes {
         global $wp_query;
         $posts_per_page = -1;
         $args = array(
-            'post_type'         => 'palestrantes',
+            'post_type'         => 'palestras',
             'posts_per_page'    => $posts_per_page
         );
 
         $posts = get_posts($args);
         if ( $posts ) {
             foreach ( $posts as $post ) {
-                $list_posts[] = $this->get_palestrantes_post($post);
+                $list_posts[] = $this->get_palestras_post($post);
             }
             return $list_posts;
         }
@@ -264,7 +264,7 @@ class Controller_Palestrantes {
         );
 
         $args = array(
-            'post_type'         => 'palestrantes',
+            'post_type'         => 'palestras',
             'post_status'       => 'publish',
             'posts_per_page'    => 5,
             'post__not_in'      => array($post_id),
@@ -273,7 +273,7 @@ class Controller_Palestrantes {
         $posts = get_posts($args);
         if ( $posts ) {
             foreach ( $posts as $post_op ) {
-                $list_posts[] = $this->get_palestrantes_post($post_op);
+                $list_posts[] = $this->get_palestras_post($post_op);
             }
             return $list_posts;
         }
