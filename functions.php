@@ -12,6 +12,11 @@ if ( ! defined( 'ODIN_CORE_DIR' ) ) {
 if ( ! defined( 'ODIN_CLASSES_DIR' ) ) {
 	define( 'ODIN_CLASSES_DIR', ODIN_CORE_DIR . '/classes' );
 }
+/**
+ *Define path and URL to the ACF plugin.
+ */
+define( 'MY_ACF_PATH', get_stylesheet_directory() . '/inc/acf/' );
+define( 'MY_ACF_URL', get_stylesheet_directory_uri() . '/inc/acf/' );
 
 
 /**
@@ -34,6 +39,11 @@ require_once FUNCTIONS_DIR . '/lib/aq-resizer/aq-resizer.php';
  */
 require_once ODIN_CLASSES_DIR . '/class-thumbnail-resizer.php';
 
+
+/**
+ * Include the ACF plugin
+ */
+require_once MY_ACF_PATH . 'acf.php';
 
 /**
  * Includes do Odin para criação de CPT's, Metaboxes, Taxonomias, etc
@@ -60,6 +70,17 @@ if ( is_admin() ) {
 	require_once FUNCTIONS_DIR . '/metaboxes.php';
 }
 
+// Customize the url setting to fix incorrect asset URLs.
+add_filter('acf/settings/url', 'my_acf_settings_url');
+function my_acf_settings_url( $url ) {
+    return MY_ACF_URL;
+}
+
+// (Optional) Hide the ACF admin menu item.
+add_filter('acf/settings/show_admin', 'my_acf_settings_show_admin');
+function my_acf_settings_show_admin( $show_admin ) {
+    return true;
+}
 
 // Remove a barra de admin
 add_filter('show_admin_bar', '__return_false');
@@ -115,3 +136,16 @@ function  add_parent_css($classes, $item){
          $classes[] = 'parent';
     return $classes;
 }
+
+
+add_action('init', function () {
+    if (function_exists('acf_add_options_page')) {
+        acf_add_options_sub_page(array(
+            'page_title' => 'Configurações Gerais',
+            'menu_title'=> 'Configurações Gerais',
+            'menu_slug' => 'theme-config-general',
+            'capability'=> 'edit_posts',
+            'redirect' => false
+        ));
+    }
+});
