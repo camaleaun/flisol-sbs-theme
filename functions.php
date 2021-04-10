@@ -147,5 +147,13 @@ add_action('init', function () {
             'capability'=> 'edit_posts',
             'redirect' => false
         ));
+
+         acf_add_options_sub_page(array(
+            'page_title' => 'Configurações Sobre',
+            'menu_title'=> 'Configurações Sobre',
+            'menu_slug' => 'theme-config-about',
+            'capability'=> 'edit_posts',
+            'redirect' => false
+        ));
     }
 });
