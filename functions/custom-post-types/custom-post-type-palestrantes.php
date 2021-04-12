@@ -10,7 +10,7 @@ class CPT_Palestrantes {
     public function __construct() {
 
         $cases = new Odin_Post_Type(
-            'Palestrantes',
+            'Palestrante',
             'palestrantes'
         );
 

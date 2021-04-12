@@ -18,5 +18,6 @@ if( ! defined( 'WPINC' ) ) {
 
 <!-- Viewport -->
 <meta name="viewport" content="width=device-width" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
 
 <?php wp_head() ?>

@@ -1,0 +1,158 @@
+.single {
+  background-color: $gray_1;
+
+  article {
+    background-color: $white__color;
+    padding: 0;
+    border-radius: 0.8rem;
+  }
+
+  .breadcrumb {
+    margin-bottom: 0;
+  }
+
+  .row {
+    margin: 8rem 0;
+  }
+
+  .single__conteudo-featured {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      height: 40rem;
+      object-fit: cover;
+      border-radius: 0.8rem 0.8rem 0 0;
+    }
+  }
+
+  .single__conteudo-conteudo {
+    padding: 2rem;
+
+    .titulo-negrito {
+      font-weight: bold;
+    }
+
+    .titulo-laranja {
+      color: $primary-color;
+    }
+
+    span,
+    blockquote,
+    a,
+    p {
+      font-size: 1.6rem;
+    }
+
+    blockquote {
+      padding: 1.4rem;
+      background-color: $light__third;
+      margin: 1rem 0;
+      -webkit-box-shadow: 1px 3px 13px -2px rgba(0, 0, 0, 0.27);
+      -moz-box-shadow: 1px 3px 13px -2px rgba(0, 0, 0, 0.27);
+      box-shadow: 1px 3px 13px -2px rgba(0, 0, 0, 0.27);
+    }
+  }
+
+  code {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    padding: 2rem;
+    border-left: 5px solid $purple;
+    background: purple_2;
+    color: $dark__fourth;
+    border-radius: 2px;
+    white-space: pre-wrap;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 400px !important;
+  }
+
+  .single__conteudo-conteudo {
+    a {
+      color: $primary-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    iframe {
+      margin: 2rem 0;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+
+    h5 {
+      font-size: 1.8rem;
+    }
+
+    h6 {
+      font-size: 1.6rem;
+    }
+  }
+
+  sidebar {
+    background-color: $white__color;
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0.8rem;
+  }
+
+  .single__sidebar-cabecalho {
+    border-bottom: 1px solid $secondary-color;
+    padding: 2rem 0;
+
+    h3 {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 61.9em) {
+  .single sidebar {
+    margin: 2rem 0;
+    max-width: unset;
+  }
+}
+
+.single__sidebar__item {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 0;
+  border-bottom: 1px solid $secondary-color-rgba;
+}
+
+.single__sidebar__item-icon i {
+  margin-right: 3.2rem;
+  font-size: 2.2rem;
+  color: $primary-color;
+}
+
+.single__sidebar__item-subtitulo {
+  color: $dark__third;
+}
+
+.single__sidebar__item-titulo {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}

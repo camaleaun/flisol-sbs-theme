@@ -3,7 +3,7 @@
 /**
  * This class was created to be a easy way to import METABOXES files and control what metaboxes the pages will use.
  * @author MASSANEIRO, Luís Felipe Massaneiro
- * @copyright Many Makers
+ * @copyright Flisol SBS
  */
 class MTB_Import {
 

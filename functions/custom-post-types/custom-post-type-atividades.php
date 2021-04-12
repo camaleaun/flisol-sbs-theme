@@ -10,7 +10,7 @@ class CPT_Atividades {
     public function __construct() {
 
         $cases = new Odin_Post_Type(
-            'Atividades',
+            'Atividade',
             'atividades'
         );
 

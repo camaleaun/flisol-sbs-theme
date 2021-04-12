@@ -209,7 +209,7 @@ class Controller_Common_Admin {
 	public function footer_admin() {
 
 		$footer_text = '&copy; ' . date( 'Y' ) . ' - ' . get_bloginfo( 'name' );
-		$footer_text .= ' | Criado por <a href="https://www.manymakers.digital/" target="_blank">Many Makers</a>';
+		$footer_text .= ' | Criado por <a href="https://saobentodosul.flisol.org.br" target="_blank">Flisol SBS</a>';
 		$footer_text .= ' usando <a href="http://www.wordpress.org">WordPress</a>';
 
 		echo $footer_text;

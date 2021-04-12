@@ -15,6 +15,8 @@ class Controller_Scripts {
 
         wp_register_style( 'main-style', theme_url( 'dist/styles/main.css' ), array(), $this->scripts_version );
 
+        wp_register_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css', array(), $this->scripts_version );
+
         // JS
         //wp_register_script( 'head-scripts', theme_url( 'dist/scripts/main.js' ), array(), $this->scripts_version, $this->scripts_in_header );
 		/**
@@ -45,6 +47,9 @@ class Controller_Scripts {
 		// CSS
 		wp_register_style( 'main-style', theme_url( 'dist/styles/main.css' ), array(), $this->scripts_version );
 		wp_enqueue_style( 'main-style' );
+
+		wp_register_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css', array(), $this->scripts_version );
+		wp_enqueue_style( 'font-awesome' );
 
 		// Enfileirar JS
 		wp_enqueue_script( 'head-scripts' );
