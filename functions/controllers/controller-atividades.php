@@ -127,7 +127,7 @@ class Controller_Atividades {
     }
 
     public function get_blog_categories() {
-        $categories = get_terms('category');
+        $categories = get_terms('categoria-atividade');
 
         foreach( $categories as $key => $category ) {
             if( $category->term_id == 1 ) {
@@ -139,7 +139,7 @@ class Controller_Atividades {
     }
 
     public function get_post_categories( $post_id ) {
-        $post_categories = wp_get_post_terms( $post_id, 'category' );
+        $post_categories = wp_get_post_terms( $post_id, 'categoria-atividade' );
         foreach( $post_categories as $key => $category ) {
             if( $category->slug == 'sem-categoria' ) {
                 unset( $post_categories[ $key ]);

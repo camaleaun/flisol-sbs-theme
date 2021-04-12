@@ -2,16 +2,16 @@
 if( !defined( 'WPINC' ) )
   die();
 
-class TAX_Palestras {
+class TAX_Atividades {
 
     // -----------------------------------------------------------------------------
 
     public function __construct()  {
 
         $course_type = new Odin_Taxonomy(
-            'categoria Palestra',   // Nome (Singular) da nova Taxonomia.
-            'categoria-palestra',   // Slug da Taxonomia.
-            array( 'palestras' )        // Nome do tipo de conteúdo que a taxonomia irá fazer parte.
+            'Categoria Atividades',   // Nome (Singular) da nova Taxonomia.
+            'categoria-atividade',   // Slug da Taxonomia.
+            array( 'atividades' )        // Nome do tipo de conteúdo que a taxonomia irá fazer parte.
         );
 
         $course_type->set_labels(
@@ -38,10 +38,10 @@ class TAX_Palestras {
         $course_type->set_arguments(
             array(
                 'hierarchical' => true,
-                'rewrite' => array( 'slug' => 'categoria-palestra' )
+                'rewrite' => array( 'slug' => 'categoria-atividade' )
             )
         );
     }
 }
 
-new TAX_Palestras;
+new TAX_Atividades;
