@@ -16,7 +16,7 @@ class CPT_Equipe {
 
         $cases->set_arguments(
             array(
-                'supports'            => array( 'title' , 'editor', 'thumbnail' ),
+                'supports'            => array( 'title' , 'thumbnail' ),
                 'hierarchical'        => false,
                 'menu_icon'           => 'dashicons-groups',
                 'exclude_from_search' => true
