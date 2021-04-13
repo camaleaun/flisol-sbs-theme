@@ -65,6 +65,13 @@ require_once FUNCTIONS_DIR . '/classes.php';
 require_once FUNCTIONS_DIR . '/controllers.php';
 require_once FUNCTIONS_DIR . '/theme-options.php';
 require_once FUNCTIONS_DIR . '/shortcodes.php';
+//require_once FUNCTIONS_DIR . '/fields-custom-acf.php';
+
+/**
+ * Include Fields Custom Theme Humanus - ACF
+ */
+require_once FUNCTIONS_DIR . '/fields-custom-acf.php';
+
 
 
 if ( is_admin() ) {
@@ -80,7 +87,7 @@ function my_acf_settings_url( $url ) {
 // (Optional) Hide the ACF admin menu item.
 add_filter('acf/settings/show_admin', 'my_acf_settings_show_admin');
 function my_acf_settings_show_admin( $show_admin ) {
-    return true;
+    return false;
 }
 
 // Remove a barra de admin
@@ -121,45 +128,6 @@ function register_theme_menus(){
 }
 
 add_action('init', 'register_theme_menus');
-
-class DD_Wolker_Menu extends Walker_Nav_Menu {
-    function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ){
-        $GLOBALS['dd_children'] = ( isset($children_elements[$element->ID]) )? 1:0;
-        $GLOBALS['dd_depth'] = (int) $depth;
-        parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
-    }
-}
-add_filter('nav_menu_css_class','add_parent_css',10,2);
-function  add_parent_css($classes, $item){
-     global  $dd_depth, $dd_children;
-     $classes[] = 'depth'.$dd_depth;
-     if($dd_children)
-         $classes[] = 'parent';
-    return $classes;
-}
-
-
-add_action('init', function () {
-    if (function_exists('acf_add_options_page')) {
-        acf_add_options_sub_page(array(
-            'page_title' => 'Configurações Gerais',
-            'menu_title'=> 'Configurações Gerais',
-            'menu_slug' => 'theme-config-general',
-            'capability'=> 'edit_posts',
-            'redirect' => false
-        ));
-
-         acf_add_options_sub_page(array(
-            'page_title' => 'Configurações Sobre',
-            'menu_title'=> 'Configurações Sobre',
-            'menu_slug' => 'theme-config-about',
-            'capability'=> 'edit_posts',
-            'redirect' => false
-        ));
-    }
-});
-
-
 
 function mr_wp_title( $title ) {
     // Do not filter for RSS feed / if SEO plugin installed
