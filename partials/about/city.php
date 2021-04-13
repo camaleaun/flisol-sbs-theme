@@ -3,7 +3,7 @@
     <div class="container">
 
         <h2 class="titulo">
-        ><span class="blink">_</span>  Sãa Bento do Sul
+        ><span class="blink">_</span>  São Bento do Sul
         </h2>
         <h3 class="subtitulo">
         Saiba mais sobre a cidade do evento

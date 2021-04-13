@@ -29,7 +29,7 @@
 
 
         <div class="row mt-5 mb-5 saiba-mais">
-        <a class="btn btn-padrao" href="https://flisol.info/">Conheça mais sobre a Univille</a>
+        <a class="btn btn-padrao" href="https://www.univille.edu.br/pt-BR/a-univille/campi-unidades/campus-sbs/599089">Conheça mais sobre a Univille</a>
         </div>
 
     </div>
