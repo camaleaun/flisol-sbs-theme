@@ -44,7 +44,7 @@ private static $widgetBlog;
         self::$contact->general_email = @$contact_data[ 'contact_general_email' ];
         self::$contact->general_contact_email = @$contact_data[ 'contact_email' ];
         self::$contact->general_phone = @$contact_data[ 'contact_phone' ];
-        self::$contact->general_whatsapp = @$contact_data[ 'contact_whatsapp' ];
+        self::$contact->general_github = @$contact_data[ 'contact_github' ];
     }
 
     public function loadMailChimpInfo(){
@@ -78,7 +78,7 @@ private static $widgetBlog;
         self::$socialNetworks->youtube = @$social_data[ 'social_networks_youtube' ];
         self::$socialNetworks->instagram = @$social_data[ 'social_networks_instagram' ];
         self::$socialNetworks->twitter = @$social_data[ 'social_networks_twitter' ];
-        self::$socialNetworks->whatsapp = @$social_data[ 'social_networks_whatsapp' ];
+        self::$socialNetworks->github = @$social_data[ 'social_networks_github' ];
     }
 
     public function get_available_social_networks(){

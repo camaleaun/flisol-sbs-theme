@@ -62,8 +62,8 @@ class Theme_Options extends Odin_Theme_Options {
                             'description' => 'Utilize espaço para separar o código de área, ex. (47) 9090-9090'
                         ),
                         array(
-                            'id' => 'contact_whatsapp',
-                            'label' => 'Whatsapp',
+                            'id' => 'contact_github',
+                            'label' => 'GitHub',
                             'type' => 'text',
                             'description' => 'Utilize espaço para separar o código de área, ex. (47) 9090-9090'
                         ),
@@ -177,10 +177,10 @@ class Theme_Options extends Odin_Theme_Options {
                             'description' => 'Link completo, incluíndo o http://'
                         ),
                         array(
-                            'id' => 'social_networks_whatsapp',
-                            'label' => 'Whatsapp',
+                            'id' => 'social_networks_github',
+                            'label' => 'GitHub',
                             'type' => 'text',
-                            'description' => 'Utilize tudo junto inclusive o código de area, ex. 11990909090'
+                            'description' => 'Link completo, incluíndo o http://'
                         ),
                         /* array(
                             'id' => 'social_networks_spotify',

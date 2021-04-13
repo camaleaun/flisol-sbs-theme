@@ -3,6 +3,15 @@ if( ! defined( 'WPINC' ) ) {
     header( 'Location: /' );
     exit;
 }
+
+$ctrGeneral = General::getInstance();
+
+$facebook = $ctrGeneral->getSocialNetworks( 'facebook' );
+$youtube = $ctrGeneral->getSocialNetworks( 'youtube' );
+$instagram = $ctrGeneral->getSocialNetworks( 'instagram' );
+$twitter = $ctrGeneral->getSocialNetworks( 'twitter' );
+$github = $ctrGeneral->getSocialNetworks( 'github' );
+
 ?>
 </main>
 
@@ -32,15 +41,21 @@ if( ! defined( 'WPINC' ) ) {
                     ><span class="blink">_</span> Acompanhe
                 </h3>
                 <nav class="nav flex redes">
-                    <a href="#">
-                    <img src='<?php echo theme_url('/dist/images/facebook.svg') ?>' alt="Facebook" class="img-fluid">
+                    <?php if ( $facebook ): ?>
+                    <a href="<?php echo $facebook; ?>">
+                        <img src='<?php echo theme_url('/dist/images/facebook.svg') ?>' alt="Facebook" class="img-fluid">
                     </a>
-                    <a href="#">
-                    <img src='<?php echo theme_url('/dist/images/instagram.svg') ?>' alt="Instragram" class="img-fluid">
+                    <?php endif; ?>
+                    <?php if ( $instagram ): ?>
+                    <a href="<?php echo $instagram; ?>">
+                        <img src='<?php echo theme_url('/dist/images/instagram.svg') ?>' alt="Instragram" class="img-fluid">
                     </a>
-                    <a href="#">
-                    <img src='<?php echo theme_url('/dist/images/github.svg') ?>' alt="Git Hub" class="img-fluid">
+                    <?php endif; ?>
+                    <?php if ( $github ): ?>
+                    <a href="<?php echo $github; ?>">
+                        <img src='<?php echo theme_url('/dist/images/github.svg') ?>' alt="Git Hub" class="img-fluid">
                     </a>
+                    <?php endif; ?>
 
                 </nav>
                 </div>
@@ -50,7 +65,12 @@ if( ! defined( 'WPINC' ) ) {
                 <h3 class="footer__menu-titulo">
                     ><span class="blink">_</span> Apoio
                 </h3>
-
+                    <a href="https://www.udesc.br/ceplan">
+                        <img class="m-3" width="100px" src='<?php echo theme_url('/dist/images/udesc-logo.png') ?>' alt="UDESC" class="img-fluid">
+                    </a>
+                    <a href="https://www.univille.edu.br/pt-BR/a-univille/campi-unidades/campus-sbs/599089">
+                        <img class="m-3" width="100px" src='<?php echo theme_url('/dist/images/univille-logo-2.png') ?>' alt="Univille" class="img-fluid">
+                    </a>
                 </div>
             </div>
             </div>
