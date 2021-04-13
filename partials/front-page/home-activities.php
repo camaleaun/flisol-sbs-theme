@@ -1,3 +1,17 @@
+<?php
+defined( 'ABSPATH' ) || die;
+
+global $post;
+$last_id = false;
+
+/* controllers */
+$controllerAtividades = new Controller_Atividades();
+
+$atividadesPosts = $controllerAtividades->getPosts($last_id);
+
+?>
+<?php if ( $atividadesPosts ) : ?>
+
 <section id="home__atividades" class="section-padrao section-background mt-5 pb-5">
 
     <div class="container">
@@ -8,94 +22,31 @@
       <h4> Confira as nossas atividades. Todas as atividades são abertas a comunidade.</h4>
 
       <div class="row">
-
+        <?php foreach ( array_slice( $atividadesPosts, 0, 2) as $atividades ) : ?>
         <div class="col-12 home__atividades-item mb-5 mt-5">
-
           <div class="atividade-cabecalho">
-
             <img src='<?php echo theme_url('/dist/images/calendar.svg') ?>' alt="Ícone Calendario">
-
-            <h3>Pelestra WordPress XYZ</h3>
-
+            <h3><?php echo $atividades->post_title; ?></h3>
           </div>
-
           <div class="atividade-conteudo">
-
             <div>
-
-              <p>
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius perferendis minus autem numquam placeat unde velit molestias error! Ipsam corrupti pariatur cum. Animi, magni debitis? Corporis ea nesciunt doloremque.
-
-              </p>
-
+              <p><?php echo mb_strimwidth($atividades->excerpt, 0, 150, "") ?></p>
             </div>
-
             <hr>
-
             <div class="atividade-conteudo-rodape">
-
-              <time>horario 14:00</time>
-
-              <strong>Palestrante X</strong>
-
-              <a class="btn btn-padrao" href="#">Saiba Mais</a>
-
-
+              <time>Horário <?php echo the_field('horario_atividade', $atividades->ID); ?></time>
+              <strong><?php echo the_field('responsavel_atividade_nome', $atividades->ID);  ?></strong>
+              <a class="btn btn-padrao" href='<?php echo get_the_permalink($atividades->ID); ?>'>Saiba Mais</a>
             </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-12 home__atividades-item mb-5 mt-5">
-
-          <div class="atividade-cabecalho">
-
-            <img src='<?php echo theme_url('/dist/images/calendar.svg') ?>' alt="Ícone Calendario">
-
-            <h3>Pelestra WordPress XYZ</h3>
-
-          </div>
-
-          <div class="atividade-conteudo">
-
-            <div>
-
-              <p>
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius perferendis minus autem numquam placeat unde velit molestias error! Ipsam corrupti pariatur cum. Animi, magni debitis? Corporis ea nesciunt doloremque.
-
-              </p>
-
-            </div>
-
-            <hr>
-
-            <div class="atividade-conteudo-rodape">
-
-              <time>horario 14:00</time>
-
-              <strong>Palestrante X</strong>
-
-              <a class="btn btn-padrao" href="#">Saiba Mais</a>
-
-
-            </div>
-
           </div>
         </div>
-
-
-
-
-
+        <?php endforeach; ?>
       </div>
-
       <div class="row mt-5 mb-5 saiba-mais">
-        <a class="btn btn-padrao" href="#">Ver todas as atividades</a>
+        <a class="btn btn-padrao" href='<?php echo get_home_url(); ?>/atividades'>Ver todas as atividades</a>
       </div>
 
     </div>
 
   </section>
+<?php endif; ?>
