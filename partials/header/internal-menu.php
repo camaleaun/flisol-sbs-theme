@@ -1,4 +1,19 @@
- <div class="container">
+<?php
+    //global $post;
+
+    $title = get_the_title($post);
+    $parent_title = get_the_title($post->post_parent);
+
+    $page = $wp_query->post->post_type;
+
+    if ($page == 'page') {
+        $page_title = $wp_query->post->post_title;
+    } else {
+        $page_title = $wp_query->post->post_type;
+    }
+
+?>
+<div class="container">
 
       <a href="#" class="logo">
         <img src='<?php echo theme_url( '/dist/images/logo.svg' ) ?>' alt="Logo" class="img-fluid logo">
@@ -22,7 +37,7 @@
 
     <div class="container">
 
-    <h1>Sobre</h1>
+    <h1><?php wp_title(''); ?></h1>
     <div class="breadcrumb-item">
         <a href="/index.html">Home</a> &#187; <span class="atual">Sobre</span>
     </div>
