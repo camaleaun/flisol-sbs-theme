@@ -60,6 +60,7 @@ require_once ODIN_CLASSES_DIR . '/class-theme-options.php';
 *-------------------------------------------------------------------------------------*/
 require_once FUNCTIONS_DIR . '/taxonomies.php';
 require_once FUNCTIONS_DIR . '/custom-post-types.php';
+require_once FUNCTIONS_DIR . '/breadcrumbs.php';
 require_once FUNCTIONS_DIR . '/classes.php';
 require_once FUNCTIONS_DIR . '/controllers.php';
 require_once FUNCTIONS_DIR . '/theme-options.php';

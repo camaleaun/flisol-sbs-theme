@@ -38,8 +38,9 @@
     <div class="container">
 
     <h1><?php wp_title(''); ?></h1>
+    <?php wp_custom_breadcrumbs(); ?>
     <div class="breadcrumb-item">
-        <a href="/index.html">Home</a> &#187; <span class="atual">Sobre</span>
+       <!--  <a href="/index.html">Home</a> &#187; <span class="atual">Sobre</span> -->
     </div>
 
     </div>
