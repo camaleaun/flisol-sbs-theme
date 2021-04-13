@@ -34,7 +34,7 @@ get_header();
 
   <!-- Blog -->
 
-<?php inc('partials/front-page/home-blog'); ?>
+<?php /* inc('partials/front-page/home-blog');  */?>
 
   <!-- Fim Palestras -->
 

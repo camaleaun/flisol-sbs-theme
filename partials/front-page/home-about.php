@@ -76,7 +76,7 @@
             sobre temas locais, nacionais e latino-americanos sobre Software Livre, em toda a sua expressão: artística,
             acadêmica, empresarial e social.
           </p>
-          <a class="btn btn-padrao" href="#">Saiba Mais</a>
+          <a class="btn btn-padrao" href='<?php echo get_home_url(); ?>/sobre'>Saiba Mais</a>
 
         </div>
 
