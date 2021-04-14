@@ -163,17 +163,17 @@ class Controller_Common_Admin {
 	public function page_login_logo() {
 
 		$logo_url   = theme_url( 'admin/images/logo-login.png' );
-		$img_width  = 290;
-		$img_height = 120;
+		$img_width  = 380;
+		$img_height = 100;
 
 		$css = '<style>';
 		$css .= 'body.login #login h1 a {';
 		$css .= "background: url( '{$logo_url}' ) no-repeat scroll center top transparent; background-size: auto;";
 		$css .= "height: {$img_height}px;";
-		$css .= "width: {$img_width}px;";
+		$css .= "width: {$img_width}%;";
         $css .= '}';
         $css .= 'body.login #login h1 {';
-        $css .= "background-color: #2a0640;";
+        $css .= "background-color: #ff8f2a;";
         $css .= '}';
 		$css .= '</style>';
 
@@ -211,6 +211,7 @@ class Controller_Common_Admin {
 		$footer_text = '&copy; ' . date( 'Y' ) . ' - ' . get_bloginfo( 'name' );
 		$footer_text .= ' | Criado por <a href="https://saobentodosul.flisol.org.br" target="_blank">Flisol SBS</a>';
 		$footer_text .= ' usando <a href="http://www.wordpress.org">WordPress</a>';
+		$footer_text .= ' | Desenvolvido por: Luiz Felipe Massaneiro e Patrick Freitas';
 
 		echo $footer_text;
 
