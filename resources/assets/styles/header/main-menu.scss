@@ -1,10 +1,5 @@
-/* header */
-#cabecalho .logo {
-  max-height: 80px;
-}
-
 .header {
-  nav {
+  ul {
     margin: 4rem 0;
     list-style: none;
     overflow: hidden;
@@ -164,41 +159,6 @@
 }
 
 /* menu btn */
-
-/* 991px */
-
-@media (min-width: 61.9em) {
-  .header {
-    nav {
-      background-color: unset;
-      margin: 0;
-    }
-
-    li a:hover,
-    .menu-btn:hover {
-      background-color: unset;
-      color: $primary-color;
-    }
-
-    li {
-      float: left;
-
-      a {
-        padding: 2.2rem 1.6rem;
-      }
-    }
-
-    .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-
-    .menu-icon {
-      display: none;
-    }
-  }
-}
 
 .cabecalho__main {
   padding: 7rem;

@@ -102,6 +102,10 @@
   align-items: center;
   color: $white__color;
   padding: 12rem;
+
+  @include media-breakpoint-down(sm) {
+    padding: 12rem 6rem;
+  }
 }
 
 .home__data--col-1 h3 {

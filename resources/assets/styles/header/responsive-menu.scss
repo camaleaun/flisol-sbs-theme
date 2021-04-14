@@ -1,0 +1,32 @@
+@media (min-width: 61.9em) {
+  .header {
+    ul {
+      background-color: unset;
+      margin: 0;
+    }
+
+    li a:hover,
+    .menu-btn:hover {
+      background-color: unset;
+      color: $primary-color;
+    }
+
+    li {
+      float: left;
+
+      a {
+        padding: 2.2rem 1.6rem;
+      }
+    }
+
+    .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+  }
+}

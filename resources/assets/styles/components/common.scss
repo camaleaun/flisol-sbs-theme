@@ -18,6 +18,10 @@ body {
   line-height: 1.6;
 }
 
+#cabecalho .logo {
+  max-height: 80px;
+}
+
 .btn-padrao {
   color: $white__color;
   background-color: $primary-color;
