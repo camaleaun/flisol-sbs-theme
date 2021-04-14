@@ -163,8 +163,8 @@ class Controller_Common_Admin {
 	public function page_login_logo() {
 
 		$logo_url   = theme_url( 'admin/images/logo-login.png' );
-		$img_width  = 380;
-		$img_height = 100;
+		$img_height = 380;
+		$img_width  = 100;
 
 		$css = '<style>';
 		$css .= 'body.login #login h1 a {';

@@ -1,19 +1,31 @@
 <?php
-/**
- * BLOG SINGLE
- *
- */
+/* Template Name: Página Padrão */
+defined( 'ABSPATH' ) || die;
 
-    if( ! defined( 'WPINC' ) ) {
-        header( 'Location: /' );
-        exit;
-    }
-    get_header();
-    the_post();
-    $contollerPost = new Controller_Post();
-    $post = $contollerPost->get_post_by_id(get_the_ID());
-    $categoryInfo = array_shift($post->categories);
-    $postRelateds = $contollerPost->get_posts_related($post->ID, $categoryInfo);
+get_header();
 ?>
 
-<?php get_footer() ?>
+  <section id="programacao__fisol" class="section-padrao">
+
+    <div class="container">
+
+      <h2 class="titulo">
+        ><span class="blink">_</span> <?php wp_title(''); ?>
+      </h2>
+
+      <h3 class="subtitulo flsbs__aligncenter">
+      </h3>
+
+      <div class="row mt-5 mb-5 row-cols-1 row-cols-lg-2 g-4">
+        <?php the_content(); ?>
+      </div>
+
+
+  </section>
+
+
+
+
+<?php
+    get_footer();
+?>
