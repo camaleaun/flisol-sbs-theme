@@ -13,15 +13,25 @@ get_header();
         ><span class="blink">_</span> <?php wp_title(''); ?>
       </h2>
 
-      <h3 class="subtitulo flsbs__aligncenter">
-      </h3>
-
-      <div class="row mt-5 mb-5 row-cols-1 row-cols-lg-2 g-4">
-        <?php the_content(); ?>
-      </div>
-
-
   </section>
+    <div class="container single__conteudo">
+
+    <div class="row">
+
+      <article class="col-12 col-lg-12">
+
+        <div class="single__conteudo-conteudo">
+
+         <?php echo the_content(''); ?>
+
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
 
 
 
