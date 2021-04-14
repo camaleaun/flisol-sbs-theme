@@ -165,8 +165,8 @@ class Controller_Equipe {
             'post_type'         => 'equipe',
             'posts_per_page'    => -1,
             'tax_query'         => $tax_query,
-            'orderby'           => 'date',
-            'order'             => 'DESC',
+            'orderby'           => 'title',
+            'order'             => 'ASC',
         );
 
         $posts = get_posts($args);
@@ -186,8 +186,8 @@ class Controller_Equipe {
             'post_type'         => 'equipe',
             'posts_per_page'    => -1,
             'paged'             => $wp_query->query['paged'],
-            'orderby'           => 'date',
-            'order'             => 'DESC'
+            'orderby'           => 'title',
+            'order'             => 'ASc'
         );
 
         if ( $last_post )
