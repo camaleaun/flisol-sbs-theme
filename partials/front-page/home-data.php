@@ -9,7 +9,7 @@
           </div>
           <div class="home__data--col-2 col-md-12 col-lg-6 flexbox-strech center-xs middle-xs no-gutter-col">
                 <div class="white-text shadow-large col-padding-small-xs col-sm-padding-large overlap-left-large flexbox middle-xs center-xs right-bkg bg-color-4 content-date">
-                    <h2>26 Abr 2020</h2>
+                    <h2>24 Abr 2021</h2>
                     <h5>09:00h às 17:00h</h5>
                     <h4>Online</h4>
                     <h6>Devido a Pandemia do COVID-19 nosso evento será inteiramente online esse ano</h6>

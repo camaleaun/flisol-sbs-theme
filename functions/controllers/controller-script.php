@@ -73,10 +73,10 @@ class Controller_Scripts {
 
 	public function remove_css_js() {
 
-		if ( ! is_admin() ) {
+		/* if ( ! is_admin() ) {
 			wp_deregister_script( 'jquery' );
 			wp_dequeue_script( 'jquery' );
-		}
+		} */
 	}
 
 }

@@ -34,7 +34,11 @@ $atividadesPosts = $controllerAtividades->getPosts($last_id);
             </div>
             <hr>
             <div class="atividade-conteudo-rodape">
-              <time>Horário <?php echo the_field('horario_atividade', $atividades->ID); ?></time>
+                <?php if(get_field('horario_atividade', $atividades->ID)): ?>
+                <time>Horário <?php echo the_field('horario_atividade', $atividades->ID); ?></time>
+              <?php else: ?>
+              <time>Horário - Ocorrerá durante todo o evento.</time>
+              <?php endif; ?>
               <strong><?php echo the_field('responsavel_atividade_nome', $atividades->ID);  ?></strong>
               <a class="btn btn-padrao" href='<?php echo get_the_permalink($atividades->ID); ?>'>Saiba Mais</a>
             </div>

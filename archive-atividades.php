@@ -43,7 +43,11 @@ get_header();
                         <div class="card-footer">
                         <div>
                             <p class="palestrante"><span>Responsável:</span> <?php echo the_field('responsavel_atividade_nome', $atividades->ID);  ?></p>
-                            <p class="horario"><span>Horário:</span> <?php echo the_field('horario_atividade', $atividades->ID); ?></p>
+                            <?php if(get_field('horario_atividade', $atividades->ID)): ?>
+                                <p class="horario"><span>Horário:</span> <?php echo the_field('horario_atividade', $atividades->ID); ?></p>
+                            <?php else: ?>
+                                <p class="horario"><span>Horário:</span> <small>Ocorrerá durante todo o evento.</small></p>
+                            <?php endif; ?>
                         </div>
                         <a class="btn btn-padrao" href='<?php echo get_the_permalink($atividades->ID); ?>'>Ver Mais</a>
                         </div>

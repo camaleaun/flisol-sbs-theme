@@ -1,4 +1,5 @@
-import 'jquery/dist/jquery';
+/* import 'jquery/dist/jquery.min';
+import 'jquery/dist/jquery.slim'; */
 import 'popper.js/dist/umd/popper';
 import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/js/dist/util';
