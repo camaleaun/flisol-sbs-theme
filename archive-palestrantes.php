@@ -46,7 +46,7 @@ get_header();
                 <button class="btn btn-padrao" type="button" data-toggle="collapse" data-target="#palestrante<?php echo $counter; ?>" aria-expanded="false" aria-controls="palestrante<?php echo $counter; ?>">Ler Bio</button>
 
               <div class="collapse" id="palestrante<?php echo $counter; ?>">
-                <p class="card-text"><?php echo ($palestrantes->excerpt); ?></p>
+                <p class="card-text"><?php echo strip_tags(apply_filters('the_content', $palestrantes->post_content));  ?></p>
               </div>
 
             </div>
