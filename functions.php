@@ -20,6 +20,24 @@ define( 'MY_ACF_URL', get_stylesheet_directory_uri() . '/inc/acf/' );
 
 
 /**
+ *Define path and URL to the Redux Framerwork plugin.
+ */
+
+if ( ! defined( 'REDUX_FRAMEWORK_PATH' ) ) {
+	define( 'REDUX_FRAMEWORK_PATH', get_template_directory() . '/inc/redux-framework/' );
+}
+
+//require_once REDUX_FRAMEWORK_PATH  . '/config.php';
+
+if ( !class_exists( 'ReduxFramework' ) && file_exists( REDUX_FRAMEWORK_PATH. '/ReduxCore/framework.php' ) ) {
+    require_once REDUX_FRAMEWORK_PATH. '/ReduxCore/framework.php';
+}
+/* if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/sample/sample-config.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/ReduxFramework/sample/sample-config.php' );
+} */
+
+
+/**
  * Criação de páginas estáticas
  */
 require_once FUNCTIONS_DIR . '/pages.php';
@@ -65,6 +83,7 @@ require_once FUNCTIONS_DIR . '/classes.php';
 require_once FUNCTIONS_DIR . '/controllers.php';
 require_once FUNCTIONS_DIR . '/theme-options.php';
 require_once FUNCTIONS_DIR . '/shortcodes.php';
+require_once FUNCTIONS_DIR . '/redux.php';
 //require_once FUNCTIONS_DIR . '/fields-custom-acf.php';
 
 /**
