@@ -5,6 +5,6 @@
             "./styles/main.scss"
         ]
     },
-    "publicPath": "/wp-content/themes/humanus_theme/",
+    "publicPath": "/wp-content/themes/flisol-sbs-theme/",
     "cacheBusting": "[name]"
 }
