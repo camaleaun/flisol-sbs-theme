@@ -1,4 +1,4 @@
-<div class="container cabecalho__transparente">
+<div class="container-fluid cabecalho__transparente">
 
     <a href='<?php echo get_home_url(); ?>' class="logo">
     <img src='<?php echo theme_url( '/dist/images/logo.svg' ) ?>' alt="Logo" class="img-fluid logo">

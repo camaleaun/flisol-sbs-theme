@@ -25,7 +25,7 @@ class Controller_Palestrantes {
         if( $query->get( 'post_type' ) !=  'palestrantes') {
             return;
         }
-        $this->query->set( 'posts_per_page', 12 );
+        $this->query->set( 'posts_per_page', -1 );
     }
 
     public function get_post_by_id( $post_id ) {

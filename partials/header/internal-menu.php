@@ -13,7 +13,7 @@
     }
 
 ?>
-<div class="container">
+<div class="container-fluid">
 
       <a href='<?php echo get_home_url(); ?>' class="logo">
         <img src='<?php echo theme_url( '/dist/images/logo.svg' ) ?>' alt="Logo" class="img-fluid logo">
